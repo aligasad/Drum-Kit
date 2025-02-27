@@ -21,9 +21,11 @@ assets.forEach((asset)=>{
   })
 
   // when we press key sound is formed
-  window.addEventListener('keyup', ()=>{
-    sound.play();
-  })
+  window.addEventListener('keypress', (e)=>{
+    if(e.key === asset.slice(0,1)){
+      sound.play();
+    }
+  });
   box.append(name);
   band.append(box);
 })
