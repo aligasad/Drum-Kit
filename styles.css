@@ -42,3 +42,16 @@ h1{
   align-items: center;
   cursor: pointer;
 }
+
+a{
+  text-decoration: none;
+  color: #000;
+  text-shadow: 1px 1px 5px #000;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 20px;
+}
+a span{
+  font-size: 1.5rem;
+  color: red;
+}
