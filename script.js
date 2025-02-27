@@ -3,6 +3,8 @@ band.classList.add("band"); // adding style in band div
 
 const assets = ["crash", "kick", "snare", "tom"];
 
+const fragment = document.createDocumentFragment();
+
 assets.forEach((asset)=>{
   const box = document.createElement("div");
   box.classList.add("box"); // adding style in box div
@@ -27,5 +29,7 @@ assets.forEach((asset)=>{
     }
   });
   box.append(name);
-  band.append(box);
-})
+  fragment.append(box);
+});
+
+band.append(fragment);
